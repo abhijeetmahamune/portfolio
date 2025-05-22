@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Starry Sky</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .stars {
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow:
+        100px 200px white,
+        120px 180px white,
+        150px 300px white,
+        180px 100px white,
+        200px 400px white,
+        240px 220px white,
+        260px 320px white,
+        280px 500px white,
+        300px 100px white,
+        330px 600px white,
+        360px 150px white,
+        400px 300px white,
+        430px 230px white,
+        450px 450px white,
+        480px 100px white,
+        500px 550px white,
+        540px 180px white,
+        570px 400px white,
+        600px 300px white,
+        650px 500px white,
+        700px 100px white,
+        750px 450px white,
+        800px 300px white,
+        850px 200px white,
+        900px 600px white,
+        950px 120px white,
+        1000px 400px white,
+        1050px 300px white,
+        1100px 200px white,
+        1150px 500px white,
+        1200px 100px white,
+        1250px 350px white,
+        1300px 600px white,
+        1350px 220px white,
+        1400px 440px white,
+        1450px 180px white,
+        1500px 300px white,
+        1550px 500px white,
+        1600px 120px white;
+      animation: moveStars 80s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-1000px);
+      }
+    }
+
+    .shooting-star {
+      position: absolute;
+      top: 0;
+      width: 2px;
+      height: 2px;
+      background: white;
+      box-shadow: 0 0 6px white;
+      border-radius: 50%;
+      animation: shoot 6s linear infinite;
+    }
+
+    @keyframes shoot {
+      0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(1000px) translateY(500px);
+        opacity: 0;
+      }
+    }
+
+    .shooting-star:nth-child(2) {
+      animation-delay: 2s;
+      top: 10%;
+      left: 5%;
+    }
+
+    .shooting-star:nth-child(3) {
+      animation-delay: 4s;
+      top: 30%;
+      left: 20%;
+    }
+
+    .shooting-star:nth-child(4) {
+      animation-delay: 6s;
+      top: 50%;
+      left: 40%;
+    }
+
+    .shooting-star:nth-child(5) {
+      animation-delay: 8s;
+      top: 70%;
+      left: 60%;
+    }
+
+    .shooting-star:nth-child(6) {
+      animation-delay: 10s;
+      top: 90%;
+      left: 80%;
+    }
+
+    .content {
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <!-- More Shooting Stars -->
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+
+  <div class="content">
+    <h1>Hello, I'm Abhijeet</h1>
+    <p>Welcome to my starry portfolio!</p>
+  </div>
+</body>
+</html>

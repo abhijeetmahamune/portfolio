@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHIJEET MAHAMUNE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000;
+            color: #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        header, nav, section, footer, form, input, textarea, button {
+            background-color: #111;
+        }
+        h1, h2, h3, h4 {
+            color: #fff;
+        }
+        hr {
+            margin: 2rem 20%;
+            height: 2px;
+            background-color: red;
+            border: none;
+        }
+        button {
+            background-color: #222;
+            border: 2px solid red;
+            color: #fff;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: red;
+            color: #000;
+        }
+        input, textarea {
+            background-color: #1a1a1a;
+            color: #eee;
+            border: 1px solid #333;
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        #form-div form {
+            background-color: #111;
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 2rem;
+        }
+        #mainbutt {
+            background-color: red;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        #mainbutt:hover {
+            background-color: #000;
+            border: 1px solid red;
+            color: red;
+        }
+        footer {
+            background-color: #000;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABHIJEET MAHAMUNE</h1>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 1rem;">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Abhijeet Mahamune...</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Details of projects...</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>Education details...</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Skillset overview...</p>
+    </section>
+    <section id="connect">
+        <h2>Connect</h2>
+        <p>Links to social profiles...</p>
+    </section>
+    <div id="form-div">
+        <form action="https://formsubmit.co/abhijeetmahamune777@gmail.com" method="POST">
+            <h3>Contact Me</h3>
+            <label>Name</label>
+            <input type="text" name="Name" required><br><br>
+            <label>Email</label>
+            <input type="email" name="Email" required><br><br>
+            <label>Message</label>
+            <textarea name="Message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit" id="mainbutt">
+        </form>
+    </div>
+    <footer>
+        <p>Created by: Abhijeet Mahamune</p>
+    </footer>
+</body>
+</html>
